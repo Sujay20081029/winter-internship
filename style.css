@@ -1,0 +1,133 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #67758c;
+  background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.demo {
+  min-height: 100vh;
+  padding: 58px 2.2vw 40px 1.1vw;
+}
+
+.count {
+  margin-bottom: 12px;
+  color: #6b7890;
+  font-size: clamp(28px, 2.3vw, 38px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+
+#countValue {
+  margin-left: 10px;
+}
+
+button {
+  border: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.primary-button {
+  min-width: 173px;
+  height: 76px;
+  margin-bottom: 12px;
+  padding: 0 24px;
+  border-radius: 12px;
+  background: #4b5565;
+  color: #ffffff;
+  font-size: clamp(24px, 2.1vw, 34px);
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  box-shadow: 0 6px 14px rgba(43, 52, 69, 0.13);
+}
+
+.primary-button:active {
+  transform: translateY(1px);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 3.5vw, 52px);
+  margin: 0 0 20px -1px;
+  min-height: 74px;
+}
+
+.action {
+  height: 58px;
+  padding: 0 20px;
+  border-radius: 10px;
+  background: transparent;
+  font-size: clamp(24px, 2.05vw, 34px);
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  transition: 120ms ease;
+}
+
+.action.delete {
+  color: #ff9cba;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(39, 48, 66, 0.06);
+  border: 1px solid #f3f5f8;
+}
+
+.action.outline {
+  color: #596b84;
+  border: 2px solid transparent;
+}
+
+.action.secondary {
+  color: #60708a;
+}
+
+.action.ghost {
+  color: #5d6c82;
+}
+
+.action.outline.active {
+  border-color: #7d8da3;
+}
+
+.action.secondary.active {
+  background: #edf1f6;
+  color: #4d5d73;
+}
+
+.action.ghost.active {
+  color: #ffffff;
+  background: #7d8898;
+}
+
+.content {
+  color: #66758d;
+  font-size: clamp(27px, 2.15vw, 36px);
+  line-height: 1.2;
+}
+
+.content p {
+  margin: 0 0 21px;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 620px) {
+  .demo {
+    padding: 32px 20px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    gap: 8px 18px;
+  }
+}
